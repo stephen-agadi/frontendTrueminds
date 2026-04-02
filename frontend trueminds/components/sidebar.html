@@ -1,42 +1,71 @@
-<div class="sidebar">
+<aside class="sidebar" aria-label="Sidebar Navigation">
+  <div class="logo">TalentFlow</div>
 
-    <div class="logo">
-        TalentFlow
+  <ul class="nav-links">
+    <li class="active">
+      <a href="../pages/dashboard.html">
+        <span class="sidebar-icon">🏠</span>
+        <span class="sidebar-text">Dashboard</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="../pages/courses.html">
+        <span class="sidebar-icon">📚</span>
+        <span class="sidebar-text">Courses</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="../pages/assignments.html">
+        <span class="sidebar-icon">📝</span>
+        <span class="sidebar-text">Assignments</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="../pages/submissions.html">
+        <span class="sidebar-icon">📤</span>
+        <span class="sidebar-text">Submissions</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="../pages/profile.html">
+        <span class="sidebar-icon">👤</span>
+        <span class="sidebar-text">Profile</span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="user-profile">
+    <img
+      src="https://randomuser.me/api/portraits/men/32.jpg"
+      alt="User Avatar"
+      class="avatar-img"
+    />
+
+    <div class="user-info">
+      <p class="user-name">Mark Johnson</p>
+      <p class="user-email">mark@email.com</p>
     </div>
+  </div>
+</aside>
 
-    <ul class="nav-links">
+<!-- Bottom Navigation -->
+<nav class="bottom-nav">
+  <a href="../pages/courses.html" class="bottom-nav-link">
+    <span class="bottom-nav-icon">📚</span>
+    <span class="bottom-nav-text">Courses</span>
+  </a>
 
-        <li class="active">
-            <a href="../pages/dashboard.html">Dashboard</a>
-        </li>
+  <a href="../pages/dashboard.html" class="bottom-nav-link">
+    <span class="bottom-nav-icon">🏠</span>
+    <span class="bottom-nav-text">Dashboard</span>
+  </a>
 
-        <li>
-            <a href="../pages/courses.html">Courses</a>
-        </li>
-
-        <li>
-            <a href="../pages/assignments.html">Assignments</a>
-        </li>
-
-        <li>
-            <a href="../pages/submissions.html">Submissions</a>
-        </li>
-
-        <li>
-            <a href="../pages/profile.html">Profile</a>
-        </li>
-
-    </ul>
-
-    <div class="user-profile">
-
-        <div class="avatar">👤</div>
-
-        <div class="user-info">
-            <p class="user-name">Mark Johnson</p>
-            <p class="user-email">mark@email.com</p>
-        </div>
-
-    </div>
-
-</div>
+  <a href="../pages/profile.html" class="bottom-nav-link">
+    <span class="bottom-nav-icon">👤</span>
+    <span class="bottom-nav-text">Profile</span>
+  </a>
+</nav>
