@@ -1,52 +1,48 @@
-<!-- Navbar -->
-<nav class="navbar" role="navigation" aria-label="Main Navigation">
-  <button class="sidebar-toggle" aria-label="Toggle sidebar" tabindex="0">
-    <span class="sidebar-toggle-icon">&#9776;</span>
-  </button>
+ <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <button class="sidebar-toggle" aria-label="Toggle sidebar" tabindex="0">
+        <span class="sidebar-toggle-icon">&#9776;</span>
+      </button>
+      <div class="nav-title">Dashboard</div>
+      <div class="nav-actions">
+        <button class="nav-icon" id="notificationBtn" aria-label="Notifications">
+  <span>🔔</span>
+</button>
 
-  <div class="nav-title">Dashboard</div>
-
-  <div class="nav-actions">
-    <button class="nav-icon" aria-label="Notifications" tabindex="0">
-      <span class="material-icons" aria-hidden="true">🔔</span>
-    </button>
-    
-    <div
-      class="nav-avatar"
-      tabindex="0"
-      aria-haspopup="true"
-      aria-expanded="false"
-    >
-      <img
-        src="https://randomuser.me/api/portraits/men/32.jpg"
-        alt="User Avatar"
-        class="avatar-img"
-      />
-      <ul class="avatar-dropdown" aria-label="User menu">
-        <li><a href="../pages/profile.html">Profile</a></li>
+<div class="notification-panel" id="notificationPanel">
+  <p>No new notifications</p>
+</div>
+        
+        <div class="nav-avatar" tabindex="0" aria-haspopup="true" aria-expanded="false">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Avatar" class="avatar-img" />
+          <ul class="avatar-dropdown" aria-label="User menu">
+            <li><a href="../pages/profile.html">Profile</a></li>
         <li><a href="../pages/settings.html">Settings</a></li>
         <li><a href="../pages/auth.html">Logout</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<!-- Bottom Navigation -->
-<nav class="bottom-nav" aria-label="Bottom Navigation">
-  <a href="../pages/courses.html" class="bottom-nav-link" aria-label="Courses">
-    <span class="bottom-nav-icon" aria-hidden="true">📚</span>
-    <span class="bottom-nav-text">Courses</span>
-  </a>
-  <a
-    href="../pages/dashboard.html"
-    class="bottom-nav-link"
-    aria-label="Dashboard"
-  >
-    <span class="bottom-nav-icon" aria-hidden="true">🏠</span>
-    <span class="bottom-nav-text">Dashboard</span>
-  </a>
-  <a href="../pages/profile.html" class="bottom-nav-link" aria-label="Profile">
-    <span class="bottom-nav-icon" aria-hidden="true">👤</span>
-    <span class="bottom-nav-text">Profile</span>
-  </a>
-</nav>
+     <!-- Bottom Navigation -->
+    <nav class="bottom-nav" aria-label="Bottom Navigation">
+
+      <a href="../pages/dashboard.html" class="bottom-nav-link" aria-label="Home">
+        <span class="bottom-nav-icon" aria-hidden="true">🏠</span>
+        <span class="bottom-nav-text">Home</span>
+      </a>
+      
+      <a href="../pages/courses.html" class="bottom-nav-link" aria-label="Courses">
+        <span class="bottom-nav-icon" aria-hidden="true">📚</span>
+        <span class="bottom-nav-text">Courses</span>
+      </a>
+
+      <a href="../pages/assignments.html" class="bottom-nav-link" aria-label="Assignments">
+        <span class="bottom-nav-icon" aria-hidden="true">📝</span>
+        <span class="bottom-nav-text">Assignments</span>
+      
+      <a href="../pages/profile.html" class="bottom-nav-link" aria-label="Profile">
+        <span class="bottom-nav-icon" aria-hidden="true">👤</span>
+        <span class="bottom-nav-text">Profile</span>
+      </a>
+    </nav>
