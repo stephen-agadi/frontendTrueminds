@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignments</title>
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/assignment.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Syne:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sidebar -->
+   <div id="sidebar-container"></div>
+  <!-- Navbar -->
+   <div id="navbar-container"></div>
+
+  <!-- Main content container -->
+  <div class="main">
+
+    <!-- Page title -->
+    <h1>Assignments</h1>
+
+    <!-- Search input for filtering assignments -->
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search Assignments...">
+    </div>
+
+    <!-- Assignments table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Course</th>
+          <th>Due Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <!-- Table body will be filled dynamically using JS -->
+      <tbody id="assignmentTable"></tbody>
+    </table>
+
+  </div>
+
+  <!-- JS file for assignments logic -->
+  <script src="../js/assignment.js"></script>
+</body>
+</html>

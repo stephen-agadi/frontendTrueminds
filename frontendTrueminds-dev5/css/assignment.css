@@ -1,0 +1,267 @@
+/* Updated color system (Green + Teal theme) */
+:root {
+  --primary: #2FA084;   /* Main green */
+  --accent: #85E0C9;    /* Light teal */
+  --sidebar: #D6F5ED;   /* Iceberg (sidebar background) */
+  --dark: #0f2f2a;      /* Deep greenish text */
+  --bg: #F7FDFB;        /* Soft background */
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #E6E6E6;
+  --dark_gray: #C8C6C6;
+}
+
+/* Base styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Updated font */
+  background: var(--gray);
+  display: flex; /* Allows sidebar + content layout */
+}
+
+/* Headings */
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+/* Main content area */
+.main {
+  flex: 1;
+  padding: 30px;
+  margin-left: 300px; /* width of sidebar */
+  margin-top: 70px;   /* height of navbar */
+  padding: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+ /* ======================= Assignments Page ======================= */
+
+/* Search input */
+.search-box input {
+  width: 60%;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--gray);
+  margin-bottom: 60px;
+  background: var(--dark_gray);
+}
+
+/* Table styling */
+table {
+  width: 90%;
+  border-collapse: collapse;
+  table-layout: fixed; /* forces consistent column widths */
+}
+
+/* Separate header */
+thead {
+  display: table;
+  width: 100%;
+  table-layout: fixed; /* sync with tbody */
+  margin-bottom: 12px;
+}
+
+/* Body */
+tbody {
+  display: table;
+  width: 100%;
+  table-layout: fixed; /* sync with thead */
+}
+
+/* Header styling */
+th {
+  text-align: left;
+  padding: 15px 20px;
+  background: var(--white);
+}
+
+/* Body cells */
+td {
+  padding: 25px 20px;
+  background: var(--white);
+}
+
+/* Keep rows connected */
+tbody tr td {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Header as a floating card */
+thead tr th:first-child {
+  border-top-left-radius: 7px;  /* top-left corner */
+  border-bottom-left-radius: 7px; /* bottom-left curve connecting to top body */
+}
+
+thead tr th:last-child {
+  border-top-right-radius: 10px;  /* top-right corner */
+  border-bottom-right-radius: 10px; /* bottom-right curve connecting to top body */
+}
+
+/* First row of body to match header curve smoothly */
+tbody tr:first-child td:first-child {
+  border-top-left-radius: 7px; 
+}
+
+tbody tr:first-child td:last-child {
+  border-top-right-radius: 7px; 
+}
+
+thead {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* subtle “floating” effect */
+}
+
+/* Buttons */
+button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Hover effect */
+button:hover {
+  opacity: 0.9;
+}
+
+/* Primary button */
+button.primary {
+  background: var(--primary);
+  color: white;
+}
+
+/* Upload box */
+.upload-box {
+  border: 2px dashed var(--accent);
+  padding: 40px;
+  text-align: center;
+  margin-top: 20px;
+  background: #ffffff;
+}
+
+/* Bottom action buttons */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* ======================= Submissions Page ======================= */
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #0F172A;
+}
+
+.form-group textarea {
+  width: 60%;
+  min-height: 100px;
+  padding: 15px;
+  border: 1px solid #D6F5ED; /* Iceberg / sidebar contrast */
+  border-radius: 12px;
+  resize: vertical;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  background: #ffffff;
+}
+
+/* Upload box */
+.upload label {
+  display: block;
+  font-weight: 600;
+  color: #0F172A;
+  margin-top: 40px;
+}
+.upload-box {
+  width: 60%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  border: dashed 2px var(--dark_gray);
+}
+
+.upload-box button {
+  max-height: 50px;
+  padding: 12px 28px; /* slightly bigger for balance */
+  background: var(--dark_gray); /* Primary green */
+  color: var(--black);
+  border: none;
+  border-radius: 4px; /* less rounded, blunt box style */
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.upload-box button:hover {
+  background: var(--gray); /* slightly darker green on hover */
+}
+
+/* File input label click area (hidden actual input) */
+#fileInput + button {
+  cursor: pointer;
+}
+
+/* Action buttons container */
+.actions {
+  gap: 15px;
+  width: 75%;
+}
+
+/* Cancel button */
+.actions .cancel {
+  background: var(--primary); /* Danger red */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.actions .cancel:hover {
+  background: var(--dark);
+}
+
+/* Submit button */
+.actions .submit {
+  background: var(--primary); /* Primary green */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.actions .submit:hover {
+  background: var(--dark);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+    margin-top: 70px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;   /* sidebar collapses on mobile */
+    margin-top: 70px; /* navbar still on top */
+  }
+}

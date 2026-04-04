@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submissions</title>
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/assignment.css">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Syne:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sidebar -->
+   <div id="sidebar-container"></div>
+  <!-- Navbar -->
+   <div id="navbar-container"></div>
+
+  <!-- Main container -->
+  <div class="main">
+
+    <!-- Page heading -->
+    <h1>Submissions</h1>
+
+    <!-- Assignment title input (or display area) -->
+    <div class="form-group">
+      <label>Assignment Title</label>
+      <textarea placeholder="Enter or view assignment details..."></textarea>
+    </div>
+
+    <div class="upload">
+    <label>Upload your file</label>
+    <div class="upload-box">
+  <!-- Button to trigger file selection -->
+  <button>Choose File</button>
+
+  <!-- Hidden file input -->
+  <input type="file" id="fileInput" hidden>
+</div>
+</div>
+
+    <!-- Action buttons -->
+    <div class="actions">
+      <button class="cancel">Cancel</button>
+      <button class="submit">Submit</button>
+    </div>
+
+  </div>
+
+  <!-- JS for submission logic -->
+  <script src="../js/submission.js"></script>
+</body>
+</html>
