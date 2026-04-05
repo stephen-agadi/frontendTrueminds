@@ -88,7 +88,6 @@ button{
     color: black;
     text-decoration: none;
     border: 2px solid yellow;
-    /* margin: 10px -5px; */
 }
 
 .loginAccounts{
@@ -102,7 +101,7 @@ button{
 }
 
 .logIn{
-    /* display: none; */
+    display: none;
 }
 
 @media screen and (max-width: 425px) {
