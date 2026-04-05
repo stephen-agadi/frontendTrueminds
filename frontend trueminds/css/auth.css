@@ -29,16 +29,16 @@ main{
 main .signupAndLogin{
     width: 40%;
     margin: auto;
-    padding: 30px 50px 100px;
+    padding: 30px 50px;
     border-radius: 15px;
     background-color: #D6F5ED;
 }
 
 .logo{
-    width: 200px;
+    width: 100px;
     position: absolute;
-    left: 50px;
-    top: 50px;
+    left: 25px;
+    top: 25px;
 }
 
 label, input{
@@ -53,31 +53,47 @@ input{
     border-radius: 10px;
     padding: 20px 10px;
     text-align: center;
-}
+    cursor: pointer;
+} 
 
-.signUpBtn, .logInBtn{
+button{
+    display: flex;
+    justify-content: center;
     width: 80%;
     margin: 20px auto;
-    padding: 20px;
+    padding: 15px;
     border: none;
     border-radius: 8px;
     background-color: #1F7A63;
     color: white;
 }
 
-.rememberMeCheckbox input, .rememberMeCheckbox label{
-    display: inline;
+.rememberMeCheckbox{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rememberMeCheckbox input{
+    width: 12px;
 }
 
 .rememberMeAndForgetPassword{
+    font-size: 12px;
     display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+}
+
+.rememberMeAndForgetPassword a{
+    color: black;
+    text-decoration: none;
+    border: 2px solid yellow;
+    /* margin: 10px -5px; */
 }
 
 .loginAccounts{
     width: fit-content;
     margin: 20px auto;
-    /* display: flex; */
-    /* justify-content: space-around; */
 }
 
 .loginAccounts img{
@@ -86,7 +102,7 @@ input{
 }
 
 .logIn{
-    display: none;
+    /* display: none; */
 }
 
 @media screen and (max-width: 425px) {

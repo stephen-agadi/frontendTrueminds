@@ -47,6 +47,7 @@ section img{
     background-color: #1F7A63;
     padding: 15px 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 main div a{
@@ -74,5 +75,12 @@ main div a{
     section img{
         display: block;
         margin: auto;
+    }
+}
+
+@media (min-width: 426px) and (max-width:1000px) {
+    .logo{
+        width: 150px;
+        left: 25px;
     }
 }
