@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/auth.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        
+        <div>
+            <img src="../assets/talentFlowLogo.jpeg" alt="Talent Flow Logo" class="logo">
+        </div>
+
+        <section class="signupAndLogin">
+
+            <!-- The signup form -->
+
+            <section class="signUp">
+
+                <h1>Create Your Account</h1>
+                <p>Sign up to get started!</p>
+                <form action="">
+
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="Enter full name">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your password">
+
+                    
+                    <button type="submit" class="signUpBtn">Sign Up</button>
+                </form>
+            </section>
+
+            <!-- The login form -->
+            
+            <section class="logIn">
+
+                <h1>Welcome Back</h1>
+                <p>Ready to continue your journey?</p>
+
+                <form action="">
+
+                    <label for="logInEmail">Email</label>
+                    <input type="email" name="email" id="logInEmail" placeholder="Enter your email">
+
+                    <label for="logInPassword">Password</label>
+                    <input type="password" name="password" id="logInPassword" placeholder="Enter your password">
+                    
+                    <div class="rememberMeAndForgetPassword">
+                        <div class="rememberMeCheckbox">
+                            <input type="checkbox" name="rememberMe" id="rememberMe">
+                            <label for="rememberMe">Remember me</label>
+                        </div>
+                        <div>
+                            <a href="">Forget password?</a>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="logInBtn">Log In</button>
+                </form>
+
+            </section>
+
+            <!-- Login Account type -->
+
+            <section>
+
+                <div>
+                    <p class="signUp">Sign up with</p>
+                    <p class="logIn">Log in with</p>
+                </div>
+
+                <div class="loginAccounts">
+                    <img src="../assets/facebook.svg" alt="">
+                    <img src="../assets/google.svg" alt="">
+                    <img src="../assets/apple.svg" alt="">
+                </div>
+
+                <div>
+                    <p class="logIn">Don't have an account? <b class="signUpLink">Sign Up</b></p>
+                    <p class="signUp">Already have an account? <b class="logInLink">Log In</b></p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>

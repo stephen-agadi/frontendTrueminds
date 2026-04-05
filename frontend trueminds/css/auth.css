@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+
+}
+
+h1{
+    font-size: 25px;
+}
+
+h1, p{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    height: 100dvh;
+    align-items: center;
+}
+
+main .signupAndLogin{
+    width: 40%;
+    margin: auto;
+    padding: 30px 50px 100px;
+    border-radius: 15px;
+    background-color: #D6F5ED;
+}
+
+.logo{
+    width: 200px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+label, input{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.signUpBtn, .logInBtn{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1F7A63;
+    color: white;
+}
+
+.rememberMeCheckbox input, .rememberMeCheckbox label{
+    display: inline;
+}
+
+.rememberMeAndForgetPassword{
+    display: flex;
+}
+
+.loginAccounts{
+    width: fit-content;
+    margin: 20px auto;
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+
+.loginAccounts img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.logIn{
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    .logo{
+        display: none;
+    }
+
+    main .signupAndLogin{
+        width: 100%;
+        background-color: white;
+    }
+
+    h1{
+        font-weight: 300;
+        color: #1F7A63;
+    }
+
+    input{
+        background-color: rgb(233, 232, 232);
+        text-align: left;
+    }
+
+    .signUpBtn, .logInBtn{
+        width: 100%;
+    }
+}
+
+@media (min-width: 426px) and (max-width:1000px) {
+    .logo{
+        width: 150px;
+        left: 25px;
+        top: 25px;
+    }
+
+    main .signupAndLogin{
+        width: 50%;
+        padding: 30px 30px 100px;
+    }
+
+}
